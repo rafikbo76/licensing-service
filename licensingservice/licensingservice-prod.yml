@@ -12,7 +12,7 @@
 #redis.server: "redis"
 #redis.port: "6379"
 #signing.key: "345345fsdfsf5345"
-tracer.property: "I AM A PROD PROPERTY OVERRIDE"
+example.property: "I AM IN THE DEFAULT"
 #spring.jpa.database: "MSSQL"
 spring.jpa.hibernate.ddl-auto: "update"
 spring.jpa.show-sql: "true"
