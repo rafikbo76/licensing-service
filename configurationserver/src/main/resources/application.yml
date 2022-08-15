@@ -1,11 +1,23 @@
 server:
  port: 8888 
+ logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud.config: TRACE
 
 spring:
  profiles:
-  active: native
+  active: git
  cloud:
   config:
    server:
-    native: 
-     searchLocations: file:///C:/Users/Rafik.Bouchemma/eclipse-workspace/configurationserver/src/main/resources/config/licensingservice/
+    git:
+     uri: https://github.com/rafikbo76/licensing-service/
+     default-label: main
+     searchPaths: licensingservice
+     username: rafikbo76
+     password: Iyed2010@Maram2013
+#     password: "{cipher} ca52aed410543e60892b2934cec6de87b74353999c28aab831c4212c370540c548d9c0186e8c1c61e4a6b139d4b28b24"
+#     searchPaths: licensingservice
+#    native: 
+#     searchLocations: file:///C:/Users/Rafik.Bouchemma/git/licenseservice/configurationserver/src/main/resources/config/licensingservice
