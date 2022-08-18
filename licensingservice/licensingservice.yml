@@ -1,4 +1,6 @@
 example.property: "I AM IN THE DEFAULT"
+redis.server: "localhost"
+redis.port: "6379"
 #spring.jpa.database: "MSSQL"
 #spring.datasource.platform: "postgres"
 spring.jpa.hibernate.ddl-auto: "update"
